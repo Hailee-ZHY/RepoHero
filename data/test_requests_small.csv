@@ -1,0 +1,10 @@
+question,expected_answer
+How was a simple HTTP GET request sent to a URL?,A GET request can be sent by calling the get function with the target URL which internally constructs and dispatches a request and returns a response object.
+How was an HTTP POST request sent with form data?,A POST request can be sent using the post function and passing a dictionary to the data parameter which is encoded as form data before transmission.
+How was JSON data transmitted in an HTTP request?,JSON data can be sent by passing a dictionary to the json parameter which automatically serializes the object and sets the application/json header.
+How were query parameters included in a GET request?,Query parameters can be included by providing a dictionary to the params argument which is appended to the request URL as a query string.
+How was the response body retrieved after sending a request?,The response body can be accessed through the response.text property for decoded text or response.content for raw bytes.
+How was a JSON response parsed after receiving a response?,The response.json method parses the response body and returns a Python object representing the JSON content.
+How was the HTTP status code inspected after a request?,The HTTP status code can be obtained using the response.status_code attribute.
+How were request headers provided for a single HTTP request?,Custom headers can be supplied by passing a dictionary to the headers parameter when creating the request.
+How were default headers applied across multiple requests?,Default headers can be defined on a session object through the session.headers dictionary which is applied to all outgoing requests.
